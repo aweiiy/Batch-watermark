@@ -1,4 +1,4 @@
-# Creating a shifting watermark overlay with FFmpeg
+# Creating a shifting watermark overlay for multiple videos with FFmpeg
 
 Create a dynamic, shifting watermark that moves around a video using FFmpeg.
 
