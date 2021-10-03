@@ -1,0 +1,2 @@
+for %%a in ("*.m*") do ffmpeg -i "%%a" -i watermark-image.png -filter_complex "[1]colorchannelmixer=aa=0.4,scale=iw*0.8:-1[a];[0][a]overlay=x='if(lt(mod(t\,16)\,8)\,W-w-W*10/100\,W*10/100)':y='if(lt(mod(t+4\,16)\,8)\,H-h-H*5/100\,H*5/100)'" -codec:a copy "newfiles\%%~na.mp4"
+pause
